@@ -1,0 +1,131 @@
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav, main {
+     width: 20%;
+     float: left;
+}
+
+main {
+     width: 80%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.tc-logo {
+     width: 25%;
+     margin: 10%;
+}
+
+.join {
+     color: #e0b21a;
+     margin-left: 10%;
+     font-size: 1rem;
+}
+
+nav a {
+     text-decoration: none;
+     color: gray;
+     font-size: 1.5rem;;
+}
+
+nav ul {
+     list-style: none;
+     margin: 10%;
+     padding: 0;
+     line-height: 2rem;
+}
+
+.login {
+     margin-left: 10%;
+}
+
+.search-icon {
+     font-size: 1.2rem;
+     vertical-align: middle;
+}
+
+.headliner {
+     width: 60%;
+     float: left;
+}
+
+.headlines {
+     width: 100%;
+     font-weight: bold;
+     margin: 0;
+     margin-bottom: 1rem;
+}
+
+.headliner img {
+     width: 100%;
+     margin-top: 2%;
+}
+
+.highlights {
+     width: 40%;
+     float: left;
+     padding: 0 2%;
+}
+
+.highlights section + section {
+     border-top: 1px solid #80808045;
+}
+
+.highlights img {
+     width: 15%;
+     margin-top: 1rem;
+}
+
+.lower-stories {
+     clear: both;
+}
+
+.lower-title {
+     padding: 2rem 0 0;
+     margin: 0;
+}
+
+.lower-stories > section > section {
+     width: 33.3333%;
+     float: left;
+     margin-top: 3rem;
+}
+
+.summary {
+     margin: 0 1rem;
+}
+
+.story-img {
+     margin: 0 1rem;
+     width: 85%;
+}
+
+.tc-plus {
+     width: 10%;
+}
+
+.date {
+     display: block;
+}
